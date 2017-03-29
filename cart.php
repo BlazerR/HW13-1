@@ -1,4 +1,7 @@
 <?php
+function add_item($cart, $key, $quantity) {}
+function update_item($cart, $key, $quantity) {}
+function get_subtotal($cart){}
 // Add an item to the cart
 function add_item($key, $quantity) {
     global $products;
