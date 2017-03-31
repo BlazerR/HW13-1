@@ -1,7 +1,6 @@
 <?php
 // Add an item to the cart
 
-Namespace('yourlastname');
 
 //function add_item($key, $quantity) {
 function add_item(&$cart, $key, $quantity) {
