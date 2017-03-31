@@ -8,7 +8,7 @@ function add_item(&$cart, $key, $quantity) {
     // If item already exists in cart, update quantity
     if (isset($_SESSION['cart13'][$key])) {
         $quantity += $_SESSION['cart13'][$key]['qty'];
-        update_item(&$cart, $key, $quantity);
+        update_item($key, $quantity);
         return;
     }
 
