@@ -1,7 +1,7 @@
 <?php
 // Add an item to the cart
 //function add_item($key, $quantity) {
-function add_item($cart, $key, $quantity) {
+function add_item(&$cart, $key, $quantity) {
     global $products;
     if ($quantity < 1) return;
 
@@ -26,7 +26,7 @@ function add_item($cart, $key, $quantity) {
 
 // Update an item in the cart
 //function update_item($key, $quantity) {
-function update_item($cart, $key, $quantity) {
+function update_item(&$cart, $key, $quantity) {
     $quantity = (int) $quantity;
     if (isset($_SESSION['cart13'][$key])) {
         if ($quantity <= 0) {
